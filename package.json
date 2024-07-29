@@ -1,0 +1,31 @@
+{
+  "name": "template-nextjs-pandacss-radix",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "rm -rf .next && panda codegen && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,md,mdx,css,yaml}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
+  },
+  "dependencies": {
+    "@radix-ui/themes": "^3.1.1",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.44.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "pandacss-preset-radix-colors": "^0.2.0",
+    "postcss-import": "^16.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
+  }
+}

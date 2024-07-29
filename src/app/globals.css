@@ -1,0 +1,32 @@
+/* ORDER MATTERS */
+@layer panda_reset, panda_base, panda_tokens, panda_recipes, radix, panda_utilities;
+
+@import "@radix-ui/themes/styles.css" layer(radix);
+
+@layer radix {
+    .radix-themes {
+        /* Font */
+        --default-font-family: var(--inter-font);
+
+        /* Cursors */
+        --cursor-button: pointer;
+        --cursor-checkbox: pointer;
+        --cursor-disabled: default;
+        --cursor-link: pointer;
+        --cursor-menu-item: pointer;
+        --cursor-radio: pointer;
+        --cursor-slider-thumb: grab;
+        --cursor-slider-thumb-active: grabbing;
+        --cursor-switch: pointer;
+    }
+}
+
+:root {
+    --dvh: 100vh;
+}
+
+@supports (height: 100dvh) {
+    :root {
+        --dvh: 100dvh;
+    }
+}
